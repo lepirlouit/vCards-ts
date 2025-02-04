@@ -41,7 +41,7 @@ export class vCard {
   public workAddress?: vCardMailingAddress;
   public workPhone?: string | string[];
   public workFax?: string | string[];
-  public version?: string = '3';
+  public version?: string = '3.0';
 
   public getMajorVersion() :number  {
     const majorVersionString = this.version ? this.version.split('.')[0] : '4';
